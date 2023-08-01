@@ -18,7 +18,7 @@ struct PracVisonOSApp: App {
         .windowStyle(.automatic)
 
         ImmersiveSpace(id: ImmersiveID.id) {
-            ImmersiveView()
+            ImmersiveView(viewModel: .init())
         }
         .immersionStyle(selection: $mixedImmersionStyle, in: .mixed)
     }

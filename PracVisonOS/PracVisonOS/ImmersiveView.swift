@@ -10,17 +10,15 @@ import RealityKit
 import RealityKitContent
 
 struct ImmersiveView: View {
+    @Bindable var viewModel: ImmersiveViewModel
+    
     var body: some View {
         RealityView { content in
-            // Add the initial RealityKit content
-            if let scene = try? await Entity(named: "Immersive", in: realityKitContentBundle) {
-                content.add(scene)
+            await viewModel.fetchModelEntities()
+            
+            for modelEntity in viewModel.modelEntities {
+                content.add(modelEntity)
             }
         }
     }
-}
-
-#Preview {
-    ImmersiveView()
-        .previewLayout(.sizeThatFits)
 }

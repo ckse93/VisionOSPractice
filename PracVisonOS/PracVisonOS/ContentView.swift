@@ -9,15 +9,15 @@ import SwiftUI
 import RealityKit
 
 struct ContentView: View {
-
-    @State private var showImmersiveSpace = false
-
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
 
     var body: some View {
         VStack {
             Button(action: {
+                Task {
+                    await openImmersiveSpace(id: ImmersiveID.id)
+                }
                 print("button tapped")
             }, label: {
                 Text("Button")
@@ -28,4 +28,8 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+struct ImmersiveID {
+    static let id = "Immersive space open!"
 }

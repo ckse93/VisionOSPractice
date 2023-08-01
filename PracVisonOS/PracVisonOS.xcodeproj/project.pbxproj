@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142B2ED32A78A76100905375 /* ImmersiveViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142B2ED22A78A76100905375 /* ImmersiveViewModel.swift */; };
+		142B2ED72A78A82B00905375 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 142B2ED42A78A82A00905375 /* teapot.usdz */; };
+		142B2ED82A78A82B00905375 /* tea_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 142B2ED52A78A82B00905375 /* tea_set.usdz */; };
+		142B2ED92A78A82B00905375 /* tv.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 142B2ED62A78A82B00905375 /* tv.usdz */; };
+		142B2EDC2A78A83600905375 /* guitar.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 142B2EDA2A78A83500905375 /* guitar.usdz */; };
+		142B2EDD2A78A83600905375 /* shoe.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 142B2EDB2A78A83600905375 /* shoe.usdz */; };
 		147C06512A78A31200895317 /* RealityKitContent in Frameworks */ = {isa = PBXBuildFile; productRef = 147C06502A78A31200895317 /* RealityKitContent */; };
 		147C06532A78A31200895317 /* PracVisonOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C06522A78A31200895317 /* PracVisonOSApp.swift */; };
 		147C06552A78A31200895317 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C06542A78A31200895317 /* ContentView.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		142B2ED22A78A76100905375 /* ImmersiveViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveViewModel.swift; sourceTree = "<group>"; };
+		142B2ED42A78A82A00905375 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		142B2ED52A78A82B00905375 /* tea_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tea_set.usdz; sourceTree = "<group>"; };
+		142B2ED62A78A82B00905375 /* tv.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv.usdz; sourceTree = "<group>"; };
+		142B2EDA2A78A83500905375 /* guitar.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = guitar.usdz; sourceTree = "<group>"; };
+		142B2EDB2A78A83600905375 /* shoe.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = shoe.usdz; sourceTree = "<group>"; };
 		147C064B2A78A31200895317 /* PracVisonOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracVisonOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		147C064F2A78A31200895317 /* RealityKitContent */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = RealityKitContent; sourceTree = "<group>"; };
 		147C06522A78A31200895317 /* PracVisonOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracVisonOSApp.swift; sourceTree = "<group>"; };
@@ -60,8 +72,14 @@
 				147C06522A78A31200895317 /* PracVisonOSApp.swift */,
 				147C06542A78A31200895317 /* ContentView.swift */,
 				147C06562A78A31200895317 /* ImmersiveView.swift */,
+				142B2ED52A78A82B00905375 /* tea_set.usdz */,
+				142B2ED42A78A82A00905375 /* teapot.usdz */,
+				142B2ED62A78A82B00905375 /* tv.usdz */,
+				142B2EDA2A78A83500905375 /* guitar.usdz */,
+				142B2EDB2A78A83600905375 /* shoe.usdz */,
 				147C06582A78A31800895317 /* Assets.xcassets */,
 				147C065A2A78A31800895317 /* Preview Content */,
+				142B2ED22A78A76100905375 /* ImmersiveViewModel.swift */,
 			);
 			path = PracVisonOS;
 			sourceTree = "<group>";
@@ -143,6 +161,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142B2ED72A78A82B00905375 /* teapot.usdz in Resources */,
+				142B2EDC2A78A83600905375 /* guitar.usdz in Resources */,
+				142B2ED92A78A82B00905375 /* tv.usdz in Resources */,
+				142B2EDD2A78A83600905375 /* shoe.usdz in Resources */,
+				142B2ED82A78A82B00905375 /* tea_set.usdz in Resources */,
 				147C065C2A78A31800895317 /* Preview Assets.xcassets in Resources */,
 				147C06592A78A31800895317 /* Assets.xcassets in Resources */,
 			);
@@ -155,6 +178,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				142B2ED32A78A76100905375 /* ImmersiveViewModel.swift in Sources */,
 				147C06552A78A31200895317 /* ContentView.swift in Sources */,
 				147C06532A78A31200895317 /* PracVisonOSApp.swift in Sources */,
 				147C06572A78A31200895317 /* ImmersiveView.swift in Sources */,

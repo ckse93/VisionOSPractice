@@ -32,4 +32,5 @@ struct ContentView: View {
 
 struct ImmersiveID {
     static let id = "Immersive space open!"
+    static let detailViewId = "details view id"
 }

@@ -19,6 +19,7 @@
 		147C06572A78A31200895317 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 147C06562A78A31200895317 /* ImmersiveView.swift */; };
 		147C06592A78A31800895317 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147C06582A78A31800895317 /* Assets.xcassets */; };
 		147C065C2A78A31800895317 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 147C065B2A78A31800895317 /* Preview Assets.xcassets */; };
+		14AE49E42A81D3C70085BD41 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AE49E32A81D3C70085BD41 /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		147C06562A78A31200895317 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
 		147C06582A78A31800895317 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		147C065B2A78A31800895317 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14AE49E32A81D3C70085BD41 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 			children = (
 				147C06522A78A31200895317 /* PracVisonOSApp.swift */,
 				147C06542A78A31200895317 /* ContentView.swift */,
+				14AE49E32A81D3C70085BD41 /* DetailView.swift */,
 				147C06562A78A31200895317 /* ImmersiveView.swift */,
 				142B2ED52A78A82B00905375 /* tea_set.usdz */,
 				142B2ED42A78A82A00905375 /* teapot.usdz */,
@@ -181,6 +184,7 @@
 				142B2ED32A78A76100905375 /* ImmersiveViewModel.swift in Sources */,
 				147C06552A78A31200895317 /* ContentView.swift in Sources */,
 				147C06532A78A31200895317 /* PracVisonOSApp.swift in Sources */,
+				14AE49E42A81D3C70085BD41 /* DetailView.swift in Sources */,
 				147C06572A78A31200895317 /* ImmersiveView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

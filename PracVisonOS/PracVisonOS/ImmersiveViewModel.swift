@@ -25,7 +25,7 @@ final class ImmersiveViewModel {
             async let guitar = try await ModelEntity(named: "guitar")
             async let shoe = try await ModelEntity(named: "shoe")
             
-            self.modelEntities = await try [tea_set, teapot, tv, guitar, shoe]
+            self.modelEntities = try await [tea_set, teapot, tv, guitar, shoe]
             
         } catch(let error) {
             print("error happend: \(error.localizedDescription)")

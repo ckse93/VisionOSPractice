@@ -19,7 +19,7 @@ struct ImmersiveView: View {
             await viewModel.fetchModelEntities()
             
             for modelEntity in viewModel.modelEntities {
-                content.add(modelEntity)
+                content.add(modelEntity.addTappable())
             }
         }
         .gesture(SpatialTapGesture().targetedToAnyEntity().onEnded({ value in

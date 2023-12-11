@@ -10,19 +10,24 @@ import SwiftUI
 @main
 struct PracVisonOSApp: App {
     @State private var mixedImmersionStyle: ImmersionStyle = .mixed
-    
+    @State private var viewModel: ImmersiveViewModel = .init()
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .task {
+                    await viewModel.start()
+                }
         }
         .windowStyle(.automatic)
         
         WindowGroup(id: ImmersiveID.detailViewId, for: String.self) { value in
             DetailView(title: value.wrappedValue!)
+                .environment(viewModel)
         }
 
         ImmersiveSpace(id: ImmersiveID.id) {
-            ImmersiveView(viewModel: .init())
+            ImmersiveView()
+                .environment(viewModel)
         }
         .immersionStyle(selection: $mixedImmersionStyle, in: .mixed)
     }

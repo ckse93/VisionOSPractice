@@ -11,9 +11,18 @@ import RealityKit
 struct ContentView: View {
     @Environment(\.openImmersiveSpace) var openImmersiveSpace
     @Environment(\.dismissImmersiveSpace) var dismissImmersiveSpace
-
+    @Environment(ImmersriveViewModel.self)
     var body: some View {
         VStack {
+            Button(action: {
+                Task {
+                    await openImmersiveSpace(id: ImmersiveID.id)
+                }
+                print("button tapped")
+            }, label: {
+                Text("Button")
+            })
+            
             Button(action: {
                 Task {
                     await openImmersiveSpace(id: ImmersiveID.id)
